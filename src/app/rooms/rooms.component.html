@@ -1,0 +1,5 @@
+<h2>Welcome to {{ hotelName }}</h2>
+No of rooms available
+<span [innerText]="room.noRooms"></span>
+<div *ngIf="room.availableRooms > 0">Rooms Are Available</div>
+<app-room-list [roomList]="roomList"></app-room-list>
